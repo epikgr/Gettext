@@ -11,16 +11,19 @@ use Gettext\Utils\PhpFunctionsScanner;
 class PhpCode extends Extractor implements ExtractorInterface
 {
     public static $options = [
-         // - false: to not extract comments
-         // - empty string: to extract all comments
-         // - non-empty string: to extract comments that start with that string
-         // - array with strings to extract comments format.
+        // - false: to not extract comments
+        // - empty string: to extract all comments
+        // - non-empty string: to extract comments that start with that string
+        // - array with strings to extract comments format.
         'extractComments' => false,
 
         'constants' => [],
 
         'functions' => [
             'gettext' => 'gettext',
+            'Translate' => 'gettext',
+            'translate' => 'gettext',
+            '_' => 'gettext',
             '__' => 'gettext',
             'ngettext' => 'ngettext',
             'n__' => 'ngettext',
@@ -124,15 +127,15 @@ class PhpCode extends Extractor implements ExtractorInterface
 
         if ($dec < 0x010000) {
             return chr(0xE0 + ($dec >> 12))
-                    .chr(0x80 + (($dec >> 6) & 0x3f))
-                    .chr(0x80 + ($dec & 0x3f));
+                .chr(0x80 + (($dec >> 6) & 0x3f))
+                .chr(0x80 + ($dec & 0x3f));
         }
 
         if ($dec < 0x200000) {
             return chr(0xF0 + ($dec >> 18))
-                    .chr(0x80 + (($dec >> 12) & 0x3f))
-                    .chr(0x80 + (($dec >> 6) & 0x3f))
-                    .chr(0x80 + ($dec & 0x3f));
+                .chr(0x80 + (($dec >> 12) & 0x3f))
+                .chr(0x80 + (($dec >> 6) & 0x3f))
+                .chr(0x80 + ($dec & 0x3f));
         }
     }
 }

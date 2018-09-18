@@ -15,6 +15,7 @@ class JsCode extends Extractor implements ExtractorInterface
 
         'functions' => [
             'gettext' => 'gettext',
+            '_' => 'gettext',
             '__' => 'gettext',
             'ngettext' => 'ngettext',
             'n__' => 'ngettext',

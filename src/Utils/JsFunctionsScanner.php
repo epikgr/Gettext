@@ -163,6 +163,8 @@ class JsFunctionsScanner extends FunctionsScanner
                         case 'double-quote':
                         case 'simple-quote':
                             break;
+                        case 'function':
+                            continue 3;
 
                         default:
                             $buffer = '';
