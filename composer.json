@@ -1,5 +1,5 @@
 {
-    "name": "gettext/gettext-voo4",
+    "name": "gettext-voo4/gettext",
     "type": "library",
     "description": "PHP gettext manager",
     "keywords": ["js", "gettext", "i18n", "translation", "po", "mo", "voo4"],
