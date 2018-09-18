@@ -1,21 +1,21 @@
 {
-    "name": "gettext/gettext",
+    "name": "gettext/gettext-voo4",
     "type": "library",
     "description": "PHP gettext manager",
-    "keywords": ["js", "gettext", "i18n", "translation", "po", "mo"],
-    "homepage": "https://github.com/oscarotero/Gettext",
+    "keywords": ["js", "gettext", "i18n", "translation", "po", "mo", "voo4"],
+    "homepage": "https://github.com/epikgr/Gettext",
     "license": "MIT",
     "authors": [
         {
-            "name": "Oscar Otero",
-            "email": "oom@oscarotero.com",
-            "homepage": "http://oscarotero.com",
+            "name": "Kevin Grabiner",
+            "email": "k.grabiner@epiconcept.fr",
+            "homepage": "https://www.epiconcept.fr",
             "role": "Developer"
         }
     ],
     "support": {
-        "email": "oom@oscarotero.com",
-        "issues": "https://github.com/oscarotero/Gettext/issues"
+        "email": "k.grabiner@epiconcept.fr",
+        "issues": "https://github.com/epikgr/Gettext/issues"
     },
     "require": {
         "php": ">=5.4.0",
